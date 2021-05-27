@@ -1,6 +1,6 @@
 import React, {Fragment } from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs';
-import { GiftGridItem } from './GiftGridItem';
+import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ({ category, limit }) => {
 
@@ -16,7 +16,7 @@ export const GifGrid = ({ category, limit }) => {
 
                 {
                     images.map(img =>
-                        <GiftGridItem
+                        <GifGridItem
                             key={img.id}
                             {...img} />)
                 }
