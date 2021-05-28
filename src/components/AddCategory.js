@@ -23,7 +23,7 @@ export const AddCategory = ({ setCategorias, setLimite }) => { //se desestructur
         }
 
         if (numberValue.length > 0) {
-            setLimite(numberValue);
+            setLimite(Number(numberValue));
         }
     }
 

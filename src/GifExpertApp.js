@@ -2,10 +2,10 @@ import React, { Fragment, useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({defaultCategories = []}) => {
 
-    const [categorias, setCategorias] = useState([]);
-    const [limite, setLimite] = useState(20);
+    const [categorias, setCategorias] = useState(defaultCategories);
+    const [limite, setLimite] = useState(10);
 
     return (
         <Fragment>

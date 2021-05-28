@@ -29,5 +29,5 @@ export const GifGrid = ({ category, limit }) => {
 
 GifGrid.propTypes = {
     category: PropTypes.string.isRequired,
-    limit: PropTypes.string.isRequired
+    limit: PropTypes.number.isRequired
 }
