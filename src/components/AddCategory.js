@@ -73,5 +73,6 @@ export const AddCategory = ({ setCategorias, setLimite }) => { //se desestructur
 }
 
 AddCategory.propTypes = {
-    setCategorias: PropTypes.func.isRequired
+    setCategorias: PropTypes.func.isRequired,
+    setLimite: PropTypes.func.isRequired
 }
